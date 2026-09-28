@@ -22,7 +22,7 @@ jobs:
         run: |
           SDKM=$(ls -d "$ANDROID_HOME"/cmdline-tools/*/bin/sdkmanager | sort -V | tail -1)
           yes | "$SDKM" --licenses > /dev/null || true
-          "$SDKM" "platforms;android-37"
+          "$SDKM" "platforms;android-37.0"
 
       - uses: gradle/actions/setup-gradle@v4
 
